@@ -1,0 +1,26 @@
+{
+  "name": "mpl-core-gorbchain-deploy",
+  "version": "1.0.0",
+  "description": "Deploy NFTs using custom MPL Core program on Gorbchain",
+  "main": "deploy-nft.js",
+  "scripts": {
+    "deploy": "node deploy-nft.js",
+    "deploy:collection": "node deploy-nft.js --collection",
+    "test": "node -e \"console.log('Testing connection...'); require('./deploy-nft.js')\""
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-core": "^1.4.0",
+    "@metaplex-foundation/umi": "^1.2.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.2.0",
+    "@solana/web3.js": "^1.87.6"
+  },
+  "keywords": [
+    "solana",
+    "nft",
+    "metaplex",
+    "mpl-core",
+    "gorbchain"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

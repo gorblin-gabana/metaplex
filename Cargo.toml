@@ -1,0 +1,20 @@
+[workspace]
+resolver = "2"
+members = ["clients/rust", "programs/mpl-core"]
+
+[profile.release]
+overflow-checks = true # Enable integer overflow checks.
+strip = true           # Automatically strip symbols from the binary.
+opt-level = 3          # Optimize for speed.
+lto = true
+codegen-units = 1
+
+[workspace.dependencies]
+ahash = { version = "=0.8.7", features = ["std"], default-features = false }
+hashbrown = "0.14"
+indexmap = "2.1"
+clap = "4.4"
+base64ct = "=1.6.0"
+
+[workspace.metadata.resolver]
+version = "2"
